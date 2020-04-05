@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73BBD525D88BA36EE3259F16 /* Pods_CopaAmerica2021.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11B2A16983AD1B99A464C45 /* Pods_CopaAmerica2021.framework */; };
+		A09B384D2438E37E004197EC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B384C2438E37E004197EC /* RegisterViewController.swift */; };
 		A0DC42BA243245A800BAA1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC42B9243245A800BAA1F6 /* AppDelegate.swift */; };
 		A0DC42BC243245A800BAA1F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC42BB243245A800BAA1F6 /* SceneDelegate.swift */; };
 		A0DC42BE243245A800BAA1F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC42BD243245A800BAA1F6 /* ViewController.swift */; };
 		A0DC42C1243245A800BAA1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DC42BF243245A800BAA1F6 /* Main.storyboard */; };
 		A0DC42C3243245AE00BAA1F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DC42C2243245AE00BAA1F6 /* Assets.xcassets */; };
 		A0DC42C6243245AE00BAA1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DC42C4243245AE00BAA1F6 /* LaunchScreen.storyboard */; };
+		A0DC42D22432B22700BAA1F6 /* ClassStyles in Resources */ = {isa = PBXBuildFile; fileRef = A0DC42D12432B22700BAA1F6 /* ClassStyles */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06F26E6CA80FC9B533F31B30 /* Pods-CopaAmerica2021.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmerica2021.debug.xcconfig"; path = "Target Support Files/Pods-CopaAmerica2021/Pods-CopaAmerica2021.debug.xcconfig"; sourceTree = "<group>"; };
+		71D2F2958B7644C763F6A873 /* Pods-CopaAmerica2021.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopaAmerica2021.release.xcconfig"; path = "Target Support Files/Pods-CopaAmerica2021/Pods-CopaAmerica2021.release.xcconfig"; sourceTree = "<group>"; };
+		A09B384C2438E37E004197EC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A0DC42B6243245A800BAA1F6 /* CopaAmerica2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopaAmerica2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DC42B9243245A800BAA1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0DC42BB243245A800BAA1F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		A0DC42C2243245AE00BAA1F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0DC42C5243245AE00BAA1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0DC42C7243245AE00BAA1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DC42D12432B22700BAA1F6 /* ClassStyles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ClassStyles; sourceTree = "<group>"; };
+		D11B2A16983AD1B99A464C45 /* Pods_CopaAmerica2021.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopaAmerica2021.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BBD525D88BA36EE3259F16 /* Pods_CopaAmerica2021.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A09B38492438DFF8004197EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC42BD243245A800BAA1F6 /* ViewController.swift */,
+				A09B384C2438E37E004197EC /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A09B384A2438E016004197EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC42C4243245AE00BAA1F6 /* LaunchScreen.storyboard */,
+				A0DC42BF243245A800BAA1F6 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A09B384B2438E059004197EC /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				A0DC42BB243245A800BAA1F6 /* SceneDelegate.swift */,
+				A0DC42B9243245A800BAA1F6 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		A0DC42AD243245A800BAA1F6 = {
 			isa = PBXGroup;
 			children = (
 				A0DC42B8243245A800BAA1F6 /* CopaAmerica2021 */,
 				A0DC42B7243245A800BAA1F6 /* Products */,
+				DE37B4A764AE7406A5775B3C /* Pods */,
+				F21E1227247376FBD0514733 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +94,31 @@
 		A0DC42B8243245A800BAA1F6 /* CopaAmerica2021 */ = {
 			isa = PBXGroup;
 			children = (
-				A0DC42B9243245A800BAA1F6 /* AppDelegate.swift */,
-				A0DC42BB243245A800BAA1F6 /* SceneDelegate.swift */,
-				A0DC42BD243245A800BAA1F6 /* ViewController.swift */,
-				A0DC42BF243245A800BAA1F6 /* Main.storyboard */,
+				A09B384B2438E059004197EC /* Delegate */,
+				A09B384A2438E016004197EC /* Views */,
+				A09B38492438DFF8004197EC /* Controller */,
+				A0DC42D12432B22700BAA1F6 /* ClassStyles */,
 				A0DC42C2243245AE00BAA1F6 /* Assets.xcassets */,
-				A0DC42C4243245AE00BAA1F6 /* LaunchScreen.storyboard */,
 				A0DC42C7243245AE00BAA1F6 /* Info.plist */,
 			);
 			path = CopaAmerica2021;
+			sourceTree = "<group>";
+		};
+		DE37B4A764AE7406A5775B3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06F26E6CA80FC9B533F31B30 /* Pods-CopaAmerica2021.debug.xcconfig */,
+				71D2F2958B7644C763F6A873 /* Pods-CopaAmerica2021.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F21E1227247376FBD0514733 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D11B2A16983AD1B99A464C45 /* Pods_CopaAmerica2021.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0DC42CA243245AE00BAA1F6 /* Build configuration list for PBXNativeTarget "CopaAmerica2021" */;
 			buildPhases = (
+				EB3D991341DEAE17CE1101E9 /* [CP] Check Pods Manifest.lock */,
 				A0DC42B2243245A800BAA1F6 /* Sources */,
 				A0DC42B3243245A800BAA1F6 /* Frameworks */,
 				A0DC42B4243245A800BAA1F6 /* Resources */,
+				B17F295B4961E49AFE9D12CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +182,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0DC42C6243245AE00BAA1F6 /* LaunchScreen.storyboard in Resources */,
+				A0DC42D22432B22700BAA1F6 /* ClassStyles in Resources */,
 				A0DC42C3243245AE00BAA1F6 /* Assets.xcassets in Resources */,
 				A0DC42C1243245A800BAA1F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B17F295B4961E49AFE9D12CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CopaAmerica2021/Pods-CopaAmerica2021-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CopaAmerica2021/Pods-CopaAmerica2021-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CopaAmerica2021/Pods-CopaAmerica2021-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB3D991341DEAE17CE1101E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CopaAmerica2021-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0DC42B2243245A800BAA1F6 /* Sources */ = {
@@ -141,6 +240,7 @@
 				A0DC42BE243245A800BAA1F6 /* ViewController.swift in Sources */,
 				A0DC42BA243245A800BAA1F6 /* AppDelegate.swift in Sources */,
 				A0DC42BC243245A800BAA1F6 /* SceneDelegate.swift in Sources */,
+				A09B384D2438E37E004197EC /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +382,7 @@
 		};
 		A0DC42CB243245AE00BAA1F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F26E6CA80FC9B533F31B30 /* Pods-CopaAmerica2021.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +391,41 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FacebookCore\"",
+					"-framework",
+					"\"FacebookLogin\"",
+					"-weak_framework",
+					"\"Accelerate\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qbklabs..CopaAmerica2021;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +436,7 @@
 		};
 		A0DC42CC243245AE00BAA1F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71D2F2958B7644C763F6A873 /* Pods-CopaAmerica2021.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +445,41 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FacebookCore\"",
+					"-framework",
+					"\"FacebookLogin\"",
+					"-weak_framework",
+					"\"Accelerate\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.qbklabs..CopaAmerica2021;
 				PRODUCT_NAME = "$(TARGET_NAME)";

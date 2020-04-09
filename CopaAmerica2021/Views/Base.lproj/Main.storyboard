@@ -133,7 +133,7 @@
                     </view>
                     <connections>
                         <outlet property="btnFacebook" destination="AJx-DY-JTo" id="cbv-Zh-yyg"/>
-                        <segue destination="hmQ-wi-m73" kind="presentation" identifier="selfUIController" id="mF0-kB-B5F"/>
+                        <segue destination="hmQ-wi-m73" kind="presentation" identifier="selfUIController" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="boA-Rg-AUS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -145,7 +145,7 @@
             <objects>
                 <viewController storyboardIdentifier="RegisterViewController" id="hmQ-wi-m73" customClass="RegisterViewController" customModule="CopaAmerica2021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B2I-VP-xrm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellidos*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnU-im-4rd">
@@ -235,7 +235,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHh-5H-jyl">
-                                <rect key="frame" x="34" y="559" width="306" height="50"/>
+                                <rect key="frame" x="34" y="579" width="306" height="50"/>
                                 <color key="backgroundColor" red="0.45882352939999999" green="0.62745098040000002" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HJW-NV-gEK"/>
@@ -282,6 +282,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vcl-hx-DFN"/>
                     </view>
+                    <navigationItem key="navigationItem" id="02r-su-eVT"/>
                     <connections>
                         <outlet property="btnConfirmRegister" destination="xHh-5H-jyl" id="aoj-T0-EBt"/>
                         <outlet property="edtEmail" destination="L0L-BO-jSe" id="oOY-PH-I9c"/>

@@ -23,14 +23,10 @@ class StyleTextField :  UITextField {
         //BorderTextField()
     }
     
-    func CornerRadius(){
-        layer.cornerRadius = 23
-        clipsToBounds = true
-    }
+   
     
     func BorderTextField() {
-        layer.borderWidth = 1
-        //layer.borderColor =  UIColor(red: 0.878, green: 0.878, blue: 0.878, alpha: 1).cgColor
+        
     }
     
     

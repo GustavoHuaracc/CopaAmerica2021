@@ -54,7 +54,7 @@ public class ViewController: UIViewController {
         
         if((AccessToken.current) != nil){
             
-            GraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email, gender"]).start(completionHandler: { (connection, result, error) -> Void in
+            GraphRequest(graphPath: "me", parameters: ["fields": "id, first_name,last_name, picture.type(large), email, gender"]).start(completionHandler: { (connection, result, error) -> Void in
                 if (error == nil){
                     
                     let dict = result as! [String : AnyObject]
@@ -66,8 +66,9 @@ public class ViewController: UIViewController {
                     let finalURL = tmpURL2.object(forKey: "url") as! String
                     self.url = finalURL
                     
-                    self.name = picutreDic.object(forKey: "name") as! String
+                    self.name = picutreDic.object(forKey: "first_name") as! String
                     
+                    self.lastName = picutreDic.object(forKey: "last_name") as! String
 
                     if let emailAddress = picutreDic.object(forKey: "email") {
                         self.email = emailAddress as! String
@@ -89,6 +90,7 @@ public class ViewController: UIViewController {
         let vc = segue.destination as! RegisterViewController
         vc.urlImage = self.url
         vc.nameProfile = self.name
+        vc.lastNameProfile = self.lastName
         vc.emailProfile = self.email
         
     }

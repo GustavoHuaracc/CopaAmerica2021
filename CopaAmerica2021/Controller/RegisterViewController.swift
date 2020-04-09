@@ -18,6 +18,7 @@ public class RegisterViewController: UIViewController {
     @IBOutlet weak var imageProfile: UIImageView!
     var urlImage = ""
     var nameProfile = ""
+    var lastNameProfile = "";
     var emailProfile = ""
     
     override public func viewDidLoad() {
@@ -28,7 +29,7 @@ public class RegisterViewController: UIViewController {
     }
     func setData(){
         edtName.text = nameProfile
-        edtLastName.text = nameProfile
+        edtLastName.text = lastNameProfile
         edtEmail.text = emailProfile
     }
     func setImage(){
@@ -40,12 +41,56 @@ public class RegisterViewController: UIViewController {
         }
         
     }
+    
+   /* func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        if textField == address {
+           self.view.endEditing(true)
+           return false
+        }
+    }*/
+    
     func style(){
+        
+        let padding = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: self.edtName.frame.height))
+        
+        let paddingedtLastName = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: self.edtLastName.frame.height))
+        let paddingedtEmail = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: self.edtEmail.frame.height))
+        
         btnConfirmRegister.layer.cornerRadius = 23
         imageProfile.layer.cornerRadius = imageProfile.frame.size.width/2
         imageProfile.clipsToBounds = true
+        
+        edtLastName.layer.cornerRadius = 23
+        edtLastName.clipsToBounds = true
+        edtLastName.layer.borderWidth = 1
+        edtLastName.layer.borderColor =  UIColor(red: 0.878, green: 0.878, blue: 0.878, alpha: 1).cgColor
+
+        edtLastName.leftView = paddingedtLastName
+        edtLastName.leftViewMode = .always
+        
+        
+        edtName.layer.cornerRadius = 23
+        edtName.clipsToBounds = true
+        edtName.layer.borderWidth = 1
+        edtName.layer.borderColor =  UIColor(red: 0.878, green: 0.878, blue: 0.878, alpha: 1).cgColor
+
+        edtName.leftView = padding
+        edtName.leftViewMode = .always
     
+        edtEmail.layer.cornerRadius = 23
+        edtEmail.clipsToBounds = true
+        edtEmail.layer.borderWidth = 1
+        edtEmail.layer.borderColor =  UIColor(red: 0.878, green: 0.878, blue: 0.878, alpha: 1).cgColor
+        
+        edtEmail.leftView = paddingedtEmail
+        edtEmail.leftViewMode = .always
+    
+
+
+
     }
+    
+
     
     
     
